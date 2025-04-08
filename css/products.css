@@ -1,0 +1,24 @@
+#productArea img {
+width: 100%;
+height: auto;
+}
+
+#productArea p{
+    text-align: center;
+    margin-top: 5%;
+}
+
+#productArea p {
+    font-size: 1.25vw;
+}
+
+#banner p{
+    font-size: 1vw;
+}
+
+#banner{
+    text-align: center;
+    padding-bottom: auto;
+
+    height: 3vh; background-color: black; color: white;
+}
