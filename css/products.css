@@ -3,6 +3,10 @@ width: 100%;
 height: auto;
 }
 
+.col{
+    margin-bottom: 0;
+}
+
 #productArea p{
     text-align: center;
     margin-top: 5%;
@@ -12,13 +16,152 @@ height: auto;
     font-size: 1.25vw;
 }
 
-#banner p{
+.bannerText p{
     font-size: 1vw;
+    padding-bottom: 0;
 }
 
 #banner{
     text-align: center;
-    padding-bottom: auto;
-
+    
     height: 3vh; background-color: black; color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.bannerText{
+    /* transform: translateY(25%); */
+    height: auto;
+    width: fit-content;
+    display: flex;
+}
+
+/* Shopping Cart button hide and appear */
+
+#product2{
+    width: 300px;
+    position: relative;
+    margin-bottom: 100px; /* Platz für überlappende Leiste */
+}
+
+.image-container{
+    position:relative;
+    overflow: visible;
+}
+/* Die Leiste */
+.buy-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    z-index: 10; /* überlappt Inhalte darunter */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+  }
+
+.buy-bar button{
+    width:100%;
+    height: auto;
+    z-index: 1;
+}
+
+#product2:hover .buy-bar {
+
+    transform: translateY(100%);
+    opacity: 1;
+}
+
+/* #product2:hover{
+    border: .1px;
+    border-style: solid;
+    border-radius: 20px;
+    padding-top: 5%;
+} */
+
+
+/* Third element hide and appear */
+
+#product3{
+    position: relative;
+    transition: transform 0.3s ease;
+
+}
+
+.productDescription3{
+    opacity: 0;
+    transition: transform 0.3s ease;
+
+}
+.buy-bar3{
+    opacity: 0;
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    transform: translateY(-100%);
+    width: 100%;
+    z-index: 5;
+    transition: transform 0.3s ease;
+
+}
+
+.priceBox3{
+    z-index: 3;
+    position: relative;
+    right: 50%;
+    bottom: 4vh;
+    transform: translate(50%);
+    transition: transform 0.3s ease;
+    
+}
+
+.image-container3{
+    transition: transform 0.3s ease;
+}
+
+.buy-bar2 button{
+    position: absolute;
+    width:100%;
+}
+
+#product3:hover .buy-bar3{
+    opacity: 1;
+    transform: translateY(3vh);
+
+}
+
+#product3:hover .priceBox3{
+    transform: translate(50%, 7vh);
+
+
+}
+
+#product3:hover{
+    box-shadow: 0 0 0 1px gray;
+    border-radius: 2vw;
+
+    z-index: 10;
+
+}
+
+#product3:hover .image-container3 {
+    transform: translateY(2vh);
+}
+
+#product3:hover .productDescription3 {
+    opacity: 1;
+}
+
+
+
+
+
+
+
