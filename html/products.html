@@ -20,7 +20,7 @@
             <div class = "row" >
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="../html/index.html"><img src="../images/FirmenLogo.png" alt="" style="width: 100%; height: 17vh;"></a>
+                      <a class="navbar-brand" href="../html/index.html"><img src="../images/FirmenLogo.png" alt="" style="width: 100%; height: 17vh;" class = "img-fluid"></a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
@@ -51,7 +51,7 @@
         <!-- Product overview -->
         <div class = "container" id = "productArea" style = "margin-top: 5vh">
             <div class = "row">
-                <div class = "col-2"></div>
+                <div class = "col-3"></div>
                 <div class = "col">
 
                     <div id="carouselExample" class="carousel slide">
@@ -79,32 +79,46 @@
                     
                     <p>Dubai Spezial<br> 14,99$</p>
                 </div>
-                <div class = "col" id = "product2">
-                    <div class = "image-container">
-                    <img src="https://placehold.co/250x250" alt="" class = "img-fluid">
-                    </div>
-                    <div class = "buy-bar">
-                        <button class = "btn-primary">In den Einkaufswagen</button>
-                    </div>
-                    <p>Schoko-Nuss<br> 14,99$</p>
 
-                </div>
+
+
+                <div class = "col" id = "product2">
+                    <div class = "wrapper2">
+                    <div class = "image-container2">
+                    <img src="https://placehold.co/250x250" alt="" class = "img-fluid">
+                    <div class = "buy-bar2">
+                      <button class = "btn btn-primary w-100 w-sm-auto">Shop Now</button>
+                    </div>
+                    </div>
+
+                    <div class = "priceBox2">
+                    <div><p>Schoko-Nuss<br> 14,99$</p></div>
+                    </div>
+
+                    <div class = "productDescription2"><p>Description/Ingredients...</p></div>
+                    
+                    </div>
+                  </div>
+
+
+
                 <div class = "col" id = "product3">
                     <div class = "image-container3">
                     <img src="https://placehold.co/250x250" alt="" class = "img-fluid">
+                    <div class = "priceBox3" class = "container">
+                      <p>Nugget<br> 14,99$</p> 
+                      <div class = "productDescription3"><p><br>Description/Ingredients...</p></div>
+                      </div>
                     </div>
                     <div class = "buy-bar3">
                         <button class = "btn btn-primary w-100 w-sm-auto">Shop Now</button>
                     </div>
-                    <div class = "priceBox3" class = "container">
-                    <p>Nugget<br> 14,99$</p> 
-                    <div class = "productDescription3"><p>Description/Ingredients...</p></div>
-                    </div>
+
                     
                 </div>
             </div>
 
-            <div class = "row">
+            <div class = "row" id = "productRow2">
                 <div class = "col">
                     <img src="https://placehold.co/250x250" alt="" class = "img-fluid">
                     <p>Joghurette<br> 14,99$</p>
@@ -114,11 +128,11 @@
                     <p>Nougat<br> 14,99$</p>
 
                 </div>
-                <div class = "col">
+                <div class = "col" id = "product6">
                     <img src="https://placehold.co/250x250" alt="" class = "img-fluid">
                     <p>Marzipan<br> 14,99$</p>
                 </div>
-                <div class = "col-2"></div>
+                <div class = "col-3"></div>
             </div>
         </div>
 
@@ -126,5 +140,12 @@
 
 
     <script src="../extern/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      //Breite von 2 Divs synchronisieren
+      const priceBox2 = document.querySelector('.priceBox2');
+      const imagecontainer2 = document.querySelector('.image-container2');
+
+     priceBox2.style.width = getComputedStyle(imagecontainer2).width;
+    </script>
 </body>
 </html>
