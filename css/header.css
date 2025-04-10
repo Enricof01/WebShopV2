@@ -1,0 +1,11 @@
+button.btn-search {
+    background-color: lightgrey;
+    border-color: lightgrey;
+    color: black;
+}
+
+button.btn-search:hover {
+    background-color: grey;
+    border-color: grey;
+    color: white;
+}
