@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-.container1{
+.containerLogin{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,4 +99,3 @@
 .register-link p a:hover{
     text-decoration: none;
 }
-
