@@ -1,3 +1,4 @@
+/*Search button*/
 button.btn-search {
     background-color: lightgrey;
     border-color: lightgrey;
@@ -8,4 +9,25 @@ button.btn-search:hover {
     background-color: grey;
     border-color: grey;
     color: white;
+}
+
+/*Style a Operator*/
+.btn a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn a:hover {
+    color: #fff;
+}
+
+/*Social Media Icons*/
+.social-icons a {
+    font-size: 40px;
+    color: black;
+    margin: 10px;
+}
+
+.social-icons a:hover {
+    color: grey;
 }
